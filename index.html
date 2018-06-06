@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment.min.js"></script>
+    <script src="assets/javascript/interactive.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="mainPage">
+    <div class="container ">
+
+        <header class="head jumbotron">
+            <p id="headText">Train Schedule</p>
+        </header>
+
+        <div class="jumbotron" id="main">
+            <table>
+                <tr id="tableHeaderRow">
+                    <th class="tableHeader">Train Name</th>
+                    <th class="tableHeader">Destination</th>
+                    <th class="tableHeader">Frequency</th>
+                    <th class="tableHeader">Next Arrival</th>
+                    <th class="tableHeader">Minutes Away</th>
+                </tr>
+
+                <tbody id="tableBody">
+                    <!-- <td id="tableRowOne"></td>
+                    <td id="tableRowTwo"></td>
+                    <td id="tableRowThree"></td>
+                    <td id="tableRowFour"></td>
+                    <td id="tableRowFive"></td> -->
+                    </body>
+            </table>
+        </div>
+
+        <div class="row bottomCards">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardHead">Add a Train</div>
+                    <ul class="userInput list-group list-group-flush">
+                        <li class="list-group-item addATrain">Train Name:
+                            <input type="text" id="userTrainName">
+                        </li>
+                        <li class="list-group-item addATrain">Destination:
+                            <input type="text" id="userDestination">
+                        </li>
+                        <li class="list-group-item addATrain">First Train departs at :
+                            <input type="time" id="userFirstTrain">
+                        </li>
+                        <li class="list-group-item addATrain">Frequency (number of minutes between trains) :
+                            <input type="number" id="userFrequency">
+                        </li>
+                    </ul>
+                    <div class="centerIt addATrain">
+                        <input type="submit" class="btn submitButton">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/trainOne.jpg" alt="Train picture">
+                    <div class="card-body addATrain">
+                        <p class="cardBodyText ">Your source for all the fictional train info you can handle!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</html>

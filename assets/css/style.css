@@ -1,0 +1,49 @@
+.mainPage {
+    background-color: #555555;
+}
+
+.head {
+    margin-top: 2%;
+    background-color: white !important;
+}
+
+#headText {
+    font-size: 48px;
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #000055;
+}
+
+table {
+    width: 100%;
+}
+
+.tableHeader {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cardHead {
+    background-color: #000055 !important;
+    color: white;
+    text-align: center;
+}
+
+.addATrain {
+    background-color: #aaaaaa !important;
+}
+
+.centerIt {
+    text-align: center;
+}
+
+.submitButton {
+    margin-top: 1%;
+    background-color: #000022;
+    color: white;
+    width: 30%;
+}
+
+.bottomCards {
+    margin-bottom: 2%;
+}
